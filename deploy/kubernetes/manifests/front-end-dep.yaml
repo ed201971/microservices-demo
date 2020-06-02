@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: front-end
-        image: quay.io/ed201971+ci_push_pull/front_end:latest
+        image: quay.io/ed201971/front_end:latest
         resources:
           limits:
             cpu: 300m
