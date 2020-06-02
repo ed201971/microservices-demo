@@ -1,6 +1,9 @@
 ---
 apiVersion: apps/v1
 kind: Deployment
+selector:
+  matchLabels:
+    name: front-end
 metadata:
   name: front-end
   namespace: sock-shop
