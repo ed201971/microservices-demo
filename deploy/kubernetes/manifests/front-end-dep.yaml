@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: front-end
-        image: quay.io/ed201971/front_end:latest
+        image: quay.io/ed201971/front_end:master-2e2ae892
         resources:
           limits:
             cpu: 300m
@@ -34,7 +34,7 @@ spec:
           runAsUser: 10001
           capabilities:
             drop:
-              - all
+            - all
           readOnlyRootFilesystem: true
         livenessProbe:
           httpGet:
